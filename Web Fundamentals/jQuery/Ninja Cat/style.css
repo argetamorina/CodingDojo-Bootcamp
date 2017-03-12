@@ -1,0 +1,9 @@
+body {
+	width: 100%;
+	margin: 0;
+	background-color: pink;
+}
+
+div {
+	margin: 10% 40% 20px 40%; 
+}
