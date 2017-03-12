@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Functions</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function(){
+ 	// $(document).mousemove(function (e) {
+ 	// 	$('.square').css({
+ 	// 		top: e.offsetY,
+ 	// 		left: e.offsetX
+ 	// 	});
+ 	// });
+ 	$('h1').click(function() {
+ 		alert(" You click me!!!");
+ 	})
+
+ 	$( "#input1" ).focus(function(){
+  		alert( "Handler for .focus() called." );
+	});
+	$( "p" ).addClass( "newClass" );
+
+	function displayVals() {
+  		var values = $( "#numberValue" ).val();
+  		 $( '#displayAnswer' ).html( "<b>Price:</b> " + values);
+	}
+	displayVals();
+
+	$('#text').text('We add some text .text()');
+
+	var title = $( "em" ).attr( "title" );
+	$( ".atr" ).text( title );
+
+	$( ".data" ).data( "test", { first: "the game", last: "go home now" } );
+	$( "span:first" ).text( $( ".data" ).data( "test" ).first );
+	$( "span:last" ).text( $( ".data" ).data( "test" ).last );
+	 });
+
+ 	$("#testp").hide();
+  	$( "#t4est" ).click(function() {
+  	$( "#testp" ).show( "slow");
+  	});
+
+	$( "#clickme" ).click(function() {
+  	$( "#img" ).hide( "slow", function() {
+    	alert( "Animation complete." );
+ 	});
+
+
+  	// $('#toggle').click( function() {
+  	// 	$('#toggle-text').toggle( ) ;
+
+  	// });
+
+  	$('#toggle').click(function(){
+				$('#data #img1').toggle();
+				console.log("Clicked the button to show or hide the image.");
+			});
+			$('#fadeIn').click(function(){
+				$('#img1').fadeIn("slow");
+				console.log("Clicked the button to fade in the image.");				
+			});	
+			$('#fadeOut').click(function(){
+				$('#img1').fadeOut("slow");
+				console.log("Clicked the button to fade out the image.");				
+			});
+
+
+			});
+		</script>
+	
+</head>
+<body>
+<div id="data">
+ 		 The values stored were <span></span> and <span></span> .
+ 		 <button id="toggle">Toggle</button>
+ 		 <button id="fadeIn">Fade In</button>
+ 		 <button id="fadeOut">Fade Out</button>
+ 		 <img src="large.png" id="img1">	
+ 		 <img src="patikat.jpg" id="img2">	
+	</div>
+	<div class="square"></div>
+	<h1 class="container">Click me!!</h1>
+	<button>Show more:</button>
+	<div class="container2">
+		<div id="clickme"> <button> Click here</button>
+		</div>
+		<img id="img" src="large.png" alt="" width="100px" height="100px" >
+		</div>
+	<div class="horizontal-line"></div>
+
+	<button id="t4est" class="container2">Show me</button>
+	<p id="testp" class="container2">Important: Sometimes students spend too much time going through the documentation that it prevents them from actually building things. Skim through the documentation quickly and casually play around to get familiar with only the following jQuery methods. Once you have spent 4-5 hours on this assignment, move on as you'll get to learn more about how you can use these jQuery methods to build some amazing things later on.  The wireframe on the right shows only 3 functions being tested.  In this assignment, we want you to add more and test all 18 jQuery functions shown below. </p>
+
+	<img src="large.png" alt="" id="toggle" class="container2">
+	<p id="toggle-text" class="container2">Important: Sometimes students spend too much time going through the documentation that it prevents them from actually building things. Skim through the documentation quickly and casually play around to get familiar with only the following jQuery methods.</p>
+
+	<form>
+  		<input id="input1"  class="container" type="text" value="Field 1">
+  		<input type="text" value="Field 2">
+	</form>
+	<div class="horizontal-line"></div>
+	<p class="container">Add new class</p>
+	<div class="horizontal-line"></div>
+	<p id="numberValue" class="container">500</p>
+	<p id="displayAnswer" class="container"></p>
+	<div class="horizontal-line"></div>
+	<p id="text" class="container">argeta</p>
+	<div class="horizontal-line"></div>
+	<p class="container">Once there was a <em title="huge, gigantic">large</em> dinosaur...</p><p class="container">
+ 	The title of the emphasis is:</p><div class="atr container" ></div>
+ 	<div class="horizontal-line"></div>
+ 	<div class="data container">
+ 		You won <span></span> and you can <span></span>.
+ 	</div>
+ 	<div class="horizontal-line"></div>
+
+	<script src="jquery.min.js"></script>
+</body>
+</html>
