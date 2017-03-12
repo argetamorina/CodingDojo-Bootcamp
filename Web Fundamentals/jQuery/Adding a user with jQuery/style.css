@@ -1,0 +1,41 @@
+body {
+	background-color: pink;
+}
+
+.table {
+	margin: 10% 20% ;
+}
+
+.table table {
+	width: 60%;
+	border: 2px solid black;
+	height: auto;
+}
+
+.table h1 {
+	margin: 0;	
+	margin-top: 10%;
+}
+
+.table hr {
+	margin: 0;
+	margin-top: 0.1%;	
+}
+
+.table form {
+	width: 40%;
+	text-align: right;
+}
+
+.table form p {
+	display: inline-block;
+}
+
+.table form input {
+	display: inline-block;
+}
+
+.table form button {
+	display: block;
+	margin-left: 77.5%;
+}
