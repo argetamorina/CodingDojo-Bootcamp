@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data Validations</title>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/sunny/jquery-ui.css">
+  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  	<script>
+  		$(document).ready(function(){
+	  		$( function() {
+	    		$( "#datepicker1" ).datepicker();
+	    		$( "#datepicker2" ).datepicker();
+	    	});
+	    	$('form').submit(function(){
+	    		if (!($('#name').val() == '')) {
+	    			alert('Thanks ' + $('#name').val() + '! Your Cruise leaves on ' + $('#datepicker1').val() + ' and return ' + $('#datepicker2').val());
+	    			$('button').css('background-color', 'red');
+				}
+
+	    		if ($('#name').val() == '' ) {
+	    			alert('error');
+	    			$('button').css('background-color', 'blue');
+	    		}
+
+	    		return false;
+	    	});	    	
+    	});		
+  	</script>
+</head>
+<body>
+	<h1>Welcome to the CodingDojo plan a Cruise!</h1>
+	<div>
+	<form>
+		<input type="text" name="data" placeholder="From:" id="datepicker1">
+		<input type="text" name="data" placeholder="To:" id="datepicker2">
+		<input type="text" name="data" placeholder="Name:" id="name">
+		<button>Check date</button>
+		</form>
+	</div>
+</body>
+</html>
