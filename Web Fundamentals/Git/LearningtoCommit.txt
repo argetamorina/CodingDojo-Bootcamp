@@ -1,0 +1,14 @@
+cd Desktop
+mkdir test
+touch index.html
+touch styles.css
+git init
+git add .
+git commit -m "test commit"
+git remote add origin https://github.com/argetamorina/test.git
+git push -u origin master
+git add index.html
+git commit -m "update html"
+git add styles.css
+git commit -m "update css"
+git log
