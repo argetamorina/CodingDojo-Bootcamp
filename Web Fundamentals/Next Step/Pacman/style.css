@@ -1,0 +1,44 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#map {
+	height: 500px;
+	width: 500px;
+}
+
+div {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	margin: 0;
+}
+
+.wall {
+	background-color: blue;
+}
+
+.path {
+	background-image: url('muffin.png');
+	background-size: cover;
+}
+
+.pacman {
+	background-image: url('pacman.jpg'); 
+	background-size: cover; 
+}
+
+.blank {
+	background-color: white;
+}
+
+.cherry {
+	background-image: url('cherry.png');
+	background-size: cover;
+}
+
+.ghost {
+	background-image: url('ghost.png');
+	background-size: cover;
+}
