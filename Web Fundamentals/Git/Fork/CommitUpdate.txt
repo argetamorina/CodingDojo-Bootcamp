@@ -1,0 +1,9 @@
+https://github.com/jjun14/git_demo --- press button fork
+git clone https://github.com/argetamorina/git_demo.git
+some change at index file
+git init 
+git add . 
+git commit -u "Added some p element"
+git remote origin https://github.com/argetamorina/git_demo
+git push -u origin master
+press pull request button then create new pull request.
