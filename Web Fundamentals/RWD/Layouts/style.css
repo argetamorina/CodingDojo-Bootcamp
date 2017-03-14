@@ -1,0 +1,48 @@
+body {
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+.header {
+	margin: 0;
+	width: 100%;
+	border: 1px solid #ccccff;
+	background-color: #ccccff;
+
+}
+.header h1, h2 {
+	margin-left: 20px;
+}
+
+.menu {
+	margin-top: 20px;
+}
+
+.menu a {
+	border: 1px solid #8080ff;
+	padding: 5px 7px;
+	margin-left: 10px;
+	background-color: #ccccff;
+}
+
+.column {
+	display: inline-block;
+	width: 22%;
+	margin-left: 2%;
+}
+
+@media  (max-width: 760px) {
+	.menu {		
+		display: none;
+	}
+
+	.column {
+		width: 30%;
+	}
+
+	.last {
+		width: 100%;
+		display: block;
+	}
+}
