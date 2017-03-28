@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Disappearing Ninja</title>
+  </head>
+  <body>
+    {% if session['photo'] == 1 %} -->
+      <img src="../static/img/donatello.jpg" alt="donatello" />
+      <img src="../static/img/leonardo.jpg" alt="leonardo" />
+      <img src="../static/img/michelangelo.jpg" alt="michelangelo" />
+      <img src="../static/img/raphael.jpg" alt="raphael" />
+    {% endif %}
+      <img src="../static/img/{{ninjas_color}}.jpg" alt="{{ninjas_color}}" />
+  </body>
+</html>

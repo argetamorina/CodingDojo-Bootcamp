@@ -1,0 +1,33 @@
+body {
+  background-color: pink;
+  text-align: center;
+  margin: auto;
+}
+
+.white {
+    width: 0;
+    height: 0;
+    background-color: white: 
+}
+
+.red {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  background-color: red;
+}
+
+.green{
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  background-color: green;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.playagain {
+  visibility: none;
+}
