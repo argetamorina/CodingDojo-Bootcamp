@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ninja Gold</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'style.css') }}" media="screen" title="no title">
+  </head>
+  <body>
+    <h3 id="yourGold">Your Gold: </h3>
+    <h3 id="toBuild">{{session['total_point']}}</h3>
+    <div class="container">
+      <div class="border">
+        <h3>Farm</h3>
+        <p>(earns 10-20 golds)</p>
+        <form action="/process_money" method="post">
+          <input type="hidden" name="building" value="farm" />
+          <input type="submit" value="Find Gold!"/>
+        </form>
+      </div>
+      <div class="border">
+        <h3>Cave</h3>
+        <p>(earns 5-10 golds)</p>
+        <form action="/process_money" method="post">
+          <input type="hidden" name="building" value="cave" />
+          <input type="submit" value="Find Gold!"/>
+        </form>
+      </div>
+      <div class="border">
+        <h3>House</h3>
+        <p>(earns 2-5 golds)</p>
+        <form action="/process_money" method="post">
+          <input type="hidden" name="building" value="house" />
+          <input type="submit" value="Find Gold!"/>
+        </form>
+      </div>
+      <div class="border">
+        <h3>Casino</h3>
+        <p>(earns/takes 0-50 golds)</p>
+        <form action="/process_money" method="post">
+          <input type="hidden" name="building" value="casino" />
+          <input type="submit" value="Find Gold!"/>
+        </form>
+      </div>
+    </div>
+    <h3>Activities</h3>
+    <div class="action">
+      {% for act in session['action1'] %}
+         <p class="{{ session['color']}}">
+           {{act}}
+         </p>
+       {% endfor%}
+    </div>
+  </body>
+</html>
