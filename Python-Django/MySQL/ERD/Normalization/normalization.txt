@@ -1,0 +1,5 @@
+http://prntscr.com/cs8wvu
+
+The ERD model below is in violation of multiple Normalization forms. The purpose of this ERD is to keep track of the students information and ALL the interests that a student may have. 
+
+Recreate the ERD model so that it passes all 3 forms of Normalization. Hint: you will need to create a new type of relationship. Please spend no more than 30 minutes trying to figure this out. You can talk to other students in the bootcamp if you have spent more than 30 minutes on this assignment, or just move on and later check the answer sheets.

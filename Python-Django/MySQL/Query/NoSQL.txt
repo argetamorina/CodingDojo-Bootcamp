@@ -1,0 +1,6 @@
+In the NoSQL category there are a number of technologies including document databases, key value stores,
+column family stores, and graph databases, which are popular with gaming, social and IoT apps.
+NoSQL 
+Model : Non-relational
+Schema: Dynamic or flexible schemas
+Scale: Scales well horizontally 

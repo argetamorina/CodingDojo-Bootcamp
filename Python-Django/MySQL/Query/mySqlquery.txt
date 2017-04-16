@@ -1,0 +1,7 @@
+1. create database some_database
+2. use some_database
+3. create table table_name
+4. insert into table_name(columns) values (values)
+5. select columns from table where condition
+6. update table_name set column = value where condition
+7. delete from table_name where condition

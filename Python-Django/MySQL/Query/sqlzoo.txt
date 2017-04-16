@@ -1,0 +1,16 @@
+SQLZOO
+
+1. Union
+SELECT name FROM table WHERE name LIKE 'Z%'
+UNION
+SELECT name FROM actor WHERE name LIKE 'Z%'
+
+2. Alert
+SELECT * FROM games;
+ALTER TABLE games ADD season VARCHAR(6);
+UPDATE games SET season = 'summer'
+  WHERE yr = 2004;
+UPDATE games SET season = 'winter'
+  WHERE yr = 2006;
+SELECT * FROM games;
+
