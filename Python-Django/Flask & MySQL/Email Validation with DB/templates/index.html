@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My SQL</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}" >
+    </head>
+    <body>
+        <form action="/validate" method="post">
+            Email Address:
+            <input type="text" name="email" value="">
+            <input type="submit" value="Submit">
+        </form>
+        {%with messages = get_flashed_messages()%}
+        <div class="valid" class="{{session['color']}}">
+            {%for message in messages%}
+                {{message}}
+            {%endfor%}
+        </div>
+        {%endwith%}
+        <p>
+            {{session['color']}}
+        </p>
+    </body>
+</html>

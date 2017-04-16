@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Full Friends</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}" >
+    </head>
+    <body>
+        <h1>Edit</h1>
+            <p>Update a friends:</p>
+            <form action="/friends/{{query.id }}" method='post'>
+                First Name
+                <input type="text" name="first_name" value="{{ query.first_name }}">
+                Last Name
+                <input type="text" name="last_name" value="{{ query.last_name }}">
+                Email
+                <input type="email" name="email" value="{{ query.email }}">
+                <input type="submit" value="Update friend">
+            </form>
+    </body>
+</html>

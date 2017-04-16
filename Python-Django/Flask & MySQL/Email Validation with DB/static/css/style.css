@@ -1,0 +1,16 @@
+body {
+    background-color: pink;
+}
+
+.valid {
+    margin: auto;
+    width: 400px;
+    height: 60px;
+}
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: : red;
+}
