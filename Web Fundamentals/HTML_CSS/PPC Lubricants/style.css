@@ -1,0 +1,120 @@
+body {
+	width: 100%;
+	margin: 0;
+	background-color: #1a1a1a;
+}
+
+.header {
+	background-color: #f2f2f2;
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.header img {
+	padding-left: 30px; 
+	display: inline-block;
+}
+
+.header h2 {
+	display: inline-block;
+	margin: 0;
+	position: absolute;
+	margin-left: 32%;
+	margin-top: 30px;
+}
+
+.header .header-list {
+	background-color: #d9d9d9;
+	padding: 5px 5px 5px 40px;
+	
+
+}
+
+.header .header-list button {
+	padding: 5px 30px;
+	background-color: inherit;
+	border: 1px solid inherit;
+}
+
+.header input {
+	margin-left: 30px; 
+	padding: 5px 0;
+}
+
+.contanier {
+	margin: 15px 40px ;
+	width: 90%;
+	height: auto;
+	position: relative;
+}
+
+.container .container-img {
+	margin: 20px 40px;
+	width: 380px;
+	padding: 5px 5px 2px 5px;
+	background-color: white;
+	display: inline-block;
+}
+
+.container .container-about {
+	width: 700px;
+	background: linear-gradient(#b8b894, #1a1a1a);
+	display: inline-block;
+	position: absolute;
+	margin: 20px;
+}
+
+ .container .container-about h3 {
+	background-color: #ffb84d;
+	padding: 5px 15px;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+.container .container-about h4, p {
+	padding: 0 25px 5px 25px;
+	color: white;
+	margin-bottom: 0; 
+}
+
+.container .container-minilogo {
+	margin: 10px 40px;
+}
+
+.container .container-minilogo img {
+	width: 80px;
+	height: 25px;
+	margin-top: 10px; 
+	display: inline-block;
+}
+
+.container .container-minilogo p {
+	display: inline-block;
+	position: absolute;
+	padding-bottom: 5px; 
+	color: #446600;
+}
+
+.container .container-list {
+	width: 222px;
+	background-color: white;
+	margin: 20px 40px;
+	display: inline-block; 
+}
+
+.container .container-list h4 {
+	margin: 0;
+	background-color: #ffb84d;
+	padding: 5px 10px;
+}
+
+.container .container-list p {
+	color: black;
+	padding: 10px 8px;
+}
+
+.container .container-list input {
+	margin-left: 100px;
+}
+

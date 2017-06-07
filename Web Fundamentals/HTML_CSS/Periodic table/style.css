@@ -1,0 +1,160 @@
+body {
+	background-color: #d9d9d9;
+	position: relative;
+	font-family: sans-serif; 
+} 
+
+.container {
+	margin: auto;
+	color: red;
+	width: 99%;
+	position: relative;
+}
+
+.container #group{
+	display: inline-block;
+	width: 20px;
+	margin: 0;
+}
+
+.container #horizontal-list {
+	margin: 0;
+	margin-left: 30px;
+}
+
+.container #horizontal-list li{
+	display: inline-block;
+	padding: 0 23px;
+	margin-bottom: 20px;
+}
+
+.container .column {
+	width: 4.5%;
+	height: auto; 
+	display: inline-block;
+	bottom: 30px;
+	position: relative;
+}
+
+.container .column-ver {
+	width: 40px;
+	margin-left: 0px;
+	height: auto; 
+	display: inline-block;
+	bottom: 15px;
+	margin-right: 20px;
+	position: relative;
+}
+
+.container .column-ver #vertical-list {
+	right: 10px;
+	margin: 0;
+	text-align: center;
+	top: 0;
+	margin-right: 20px;
+	bottom: 20px;
+}
+
+.container .column-ver #vertical-list li {
+	display: block;
+	padding: 20px 0px;
+	right: 20px;
+}
+
+.container .column {
+	top: 7px;
+}
+
+.container  .metal {
+	display: block;
+	border: 1px solid black;
+	width: 54px;
+	height: 54px;
+	margin-top: 3px;
+	position: relative;
+}
+
+.container .column .blue {
+	background: #4d4dff;
+	margin-right: 20px;
+}
+
+.container  .metal  p {
+	margin: 0;
+	font-size: x-small;
+	color: black;
+	right: 15px;
+	position: absolute;
+}
+
+.container  .metal  #mass {
+	margin: 0;
+	font-size: x-small;
+	right: 11px;
+	color: black;
+	top: 42px;
+	position: absolute;
+}
+
+.container .metal  h3 {
+	margin:  12px 0 0 18px;
+	color: blue;
+	position: absolute;
+}
+
+.container .column .pink {
+	background: pink;
+}
+
+.container .column .orange {
+	background: orange;
+}
+
+.container .content-bottom {
+	width: 99%;
+	height: auto;
+	display: inline-block;
+}
+
+.container .content-bottom .element {
+	width: 88px;
+	display: inline-block;
+	margin: 0;
+
+}
+
+.container .content-bottom .element p {
+	color: red;
+	display: inline-block;
+	padding: 20px 0 10px 0;
+	margin-left: 62px;
+}
+
+.container .content-bottom .lineOne {
+	margin: 0;
+	margin-left: 182px;
+	display: block;
+	position: absolute;
+	bottom: 83px;
+}
+
+.container .content-bottom .lineTwo {
+	margin: 0;
+	margin-left: 175px;
+	display: block;
+	position: absolute;
+	bottom: 23px;
+}
+
+.container .content-bottom .lineOne .green {
+	background-color: green;
+	display: inline-block;
+	margin-right: 3px;
+}
+
+
+.container .content-bottom .lineTwo .green {
+	background-color: green;
+	display: inline-block;
+	margin-right: 3px;
+}
