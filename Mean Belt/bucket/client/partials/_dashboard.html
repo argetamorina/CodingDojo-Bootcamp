@@ -1,0 +1,47 @@
+<div ng-include src="'partials/_nav.html'"></div>
+
+<div class="page-header">
+  <h1>Welcome, {{currentUser.name}}!</h1>
+</div>
+
+<div class="alert alert-success" ng-show="showSuccessAlert">
+  <strong>Done!</strong> {{successTextAlert}}
+</div>
+
+<div ng-if="errors.length" class="alert alert-danger">
+  <ul>
+    <li ng-repeat="error in errors">{{error}}</li>
+  </ul>
+</div>
+
+<form class="form-inline" ng-submit="createBucketItem(bucketItem)">
+  <input type="text" class="form-control" placeholder="Title" ng-model="bucketItem.title">
+  <input type="text" class="form-control" placeholder="Description" ng-model="bucketItem.description">
+
+  <select class="form-control" ng-model="bucketItem.tagged" ng-options="user.name for user in users track by user._id">
+    <option value="">Tag User</option>
+  </select>
+
+  <button class="btn btn-default">Add to List</button>
+</form>
+
+<br><br>
+
+<p>Before I die I want to:</p>
+
+<ul ng-if="currentUser.bucketItems.length">
+  <li ng-repeat="item in currentUser.bucketItems">
+    <input type="checkbox" ng-model="item.completed" ng-change="toggleBucketItem(item._id)"> &nbsp;
+
+    {{item.owner.name}} | {{item.title}} - {{item.description}} - {{item.createdAt}}
+  </li>
+</ul>
+
+
+<br><br>
+
+<p>List of other users (Click to view profile):</p>
+
+<ul ng-if="users.length">
+  <li ng-repeat="user in users"><a ng-href="#!user/{{user._id}}">{{user.name}}</a></li>
+</ul>

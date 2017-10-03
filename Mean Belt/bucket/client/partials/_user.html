@@ -1,0 +1,27 @@
+<div ng-include src="'partials/_nav.html'"></div>
+
+<div class="page-header">
+  <h1>{{user.name}}'s Bucket List</h1>
+</div>
+
+<h4>Done:</h4>
+
+<ul ng-if="doneBucketItems().length">
+  <li ng-repeat="item in doneBucketItems()">
+    <input ng-if="currentUser._id == user._id" type="checkbox" ng-model="item.completed" ng-change="toggleBucketItem(item._id)"> &nbsp;
+
+    {{item.owner.name}} | {{item.title}} - {{item.description}} - {{item.createdAt}}
+  </li>
+</ul>
+
+<br><br>
+
+<h4>Pending:</h4>
+
+<ul ng-if="pendingBucketItems().length">
+  <li ng-repeat="item in pendingBucketItems()">
+    <input ng-if="currentUser._id == user._id" type="checkbox" ng-model="item.completed" ng-change="toggleBucketItem(item._id)"> &nbsp;
+
+    {{item.owner.name}} | {{item.title}} - {{item.description}} - {{item.createdAt}}
+  </li>
+</ul>
